@@ -30,13 +30,17 @@ app.use(cors({
 
 
 
-
+  const ProductSectionRouter = require('./routes/ProductSectionRoute')
 
   app.get( "/api/hello" , ( req , res ) => {
 
     res.send("App Running");
 
 })
+
+
+
+app.use('' , ProductSectionRouter)
 
 
 
