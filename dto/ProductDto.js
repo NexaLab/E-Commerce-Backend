@@ -6,51 +6,29 @@ class ProductDto {
 
 
 
-    perfumes;
-    cosmetics;
+    products
 
 
 
-    constructor( perfumes , cosmetics ) {
+    constructor( products  ) {
 
-        this.perfumes = perfumes;
-        this.cosmetics = cosmetics;
+        this.products = products;
     }
 
 
 
 
+    get products() {
 
-
-    get perfumes() {
-        
-        return this.perfumes;
+        return this.products;
     }
 
 
 
 
+    set products( data ) {
 
-    set perfumes( data ) {
-
-        this.perfumes = data;
-    }
-
-
-
-
-    get cosmetics() {
-        
-        return this.cosmetics;
-    }
-
-
-
-
-
-    set cosmetics( data ) {
-
-        this.cosmetics = data;
+        this.products = data;
     }
 
 
