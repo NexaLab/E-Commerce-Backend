@@ -30,7 +30,7 @@ app.use(cors({
 
 
 
-
+  const ProductSectionRouter = require('./routes/ProductSectionRoute')
 
 
 
@@ -71,6 +71,10 @@ app.use( "" , productSectionRoute);
     res.send("App Running");
 
 })
+
+
+
+app.use('' , ProductSectionRouter)
 
 
 

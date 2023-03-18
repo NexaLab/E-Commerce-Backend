@@ -8,6 +8,9 @@ const ProductSectionController = require("../controllers/ProductSectionControlle
 
 router.get("/api/products" , ProductSectionController.getAllProducts);
 
+router.get("/api/perfumes", ProductSectionController.getAllPerfumes)
+
+router.get("/api/cosmetics", ProductSectionController.getAllCosmetics)
 
 
 module.exports = router;

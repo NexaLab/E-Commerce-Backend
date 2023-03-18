@@ -5,8 +5,8 @@ const db = require("../DbConnection/DbConnection");
 
 
 
-module.exports = {
 
+module.exports = {
 
 
 
@@ -27,6 +27,7 @@ module.exports = {
                 if (error) {
 
                     reject(error);
+                    console.log(error);
                 }
 
 
