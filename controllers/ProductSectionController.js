@@ -31,9 +31,10 @@ module.exports = {
 
         const perfumes =  await PerfumeService.getAllPerfumes( req , res );
         const cosmetics =  await CosmeticService.getAllCosmetics( req , res );
-      
+        
+        const products = [ ...perfumes , ...cosmetics ]
 
-        return res.send(new GenericResponse("List of all Products: " , new ProductDto( perfumes , cosmetics )))
+        return res.send(new GenericResponse("List of all Products: " , new ProductDto( products )))
 
 
     },
