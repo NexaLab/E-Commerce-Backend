@@ -32,6 +32,40 @@ app.use(cors({
 
 
 
+
+
+
+
+// ***************************  All Routes  ******************************************
+
+
+
+const productSectionRoute = require("./routes/ProductSectionRoute");
+
+
+
+
+
+
+
+
+
+
+
+
+app.use( "" , productSectionRoute);
+
+
+
+
+
+
+
+
+
+
+
+
   app.get( "/api/hello" , ( req , res ) => {
 
     res.send("App Running");
